@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^index/?$ accueil
+RewriteRule ^heros/?$ liste-hero.php
+RewriteRule ^hero/?$ liste-hero.php
+RewriteRule ^map/?$ liste-map.php
+RewriteRule ^maps/?$ liste-map.php
+RewriteRule ^connexion/?$ authentification-membre.html
+RewriteRule ^insciption/?$ formulaire1.php
+RewriteRule ^index/?$ formulaire1.php
