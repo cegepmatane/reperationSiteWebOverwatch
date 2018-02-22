@@ -7,9 +7,12 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>Page d'accueil</title>
 	
 	<link rel="stylesheet" href="css/decoration.css">
+	
+	<style>
+	@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+	</style>
 	
 	<script type="text/javascript" src="Ajax.js"></script>
 
@@ -34,11 +37,6 @@
 	
 </head>
 <body>
-
-<h1>Page d'accueil</h1>
-
-
-
 
 <?php
 		include_once "baseDeDonnees.php";
