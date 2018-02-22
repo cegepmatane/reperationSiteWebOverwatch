@@ -1,3 +1,6 @@
+<?php
+	include "barre-navigation.php";
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -7,6 +10,8 @@
 <body>
 <h1>Overwatch</h1>
 <h2>Se connecter</h2>
+
+	<link rel="stylesheet" href="css/decoration.css">
 
 <form method="post" action="traitement-authentification-membre.php">
 

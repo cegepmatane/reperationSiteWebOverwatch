@@ -2,7 +2,6 @@
 
 	include "baseDeDonnees.php";
 	include "barre-navigation.php";
-	include ("clicks.php");
 	
 	$SQL_MAP = "SELECT * FROM map WHERE id_map = " . $_GET['map'];
     

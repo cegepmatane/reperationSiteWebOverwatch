@@ -1,6 +1,5 @@
 <?php
 	include "barre-navigation.php";
-	include ("clicks.php");
 ?>
 <!doctype html>
 <html lang="fr">
