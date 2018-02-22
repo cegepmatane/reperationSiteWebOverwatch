@@ -2,7 +2,6 @@
 
 	include "baseDeDonnees.php";
 	include "barre-navigation.php";
-	include ("clicks.php");
 	
 	$SQL_HEROS = "SELECT * FROM heros WHERE id_hero = " . $_GET['heros'];
     
@@ -22,22 +21,7 @@
 	<meta charset="utf-8">
 	<title>Hero</title>
 	
-	<style>
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	body{
-		background-color: lightgrey;
-	}
-	
-	</style>
+	<link rel="stylesheet" href="css/decoration.css">
 	
 </head>
 <body>
@@ -48,9 +32,6 @@
 
 <div id="liste-heros">
 
-
-
-	
 		<div><img src="images\mini\heros<?=$heros['id_hero']?>.jpg" style="width:304px;height:228px;"></div>
 		<div>Sex : <?=$heros['sex']?></div>
 		<div>Role : <?=$heros['role']?></div>
@@ -63,34 +44,19 @@
 			<?php
 				foreach($listeHabilite as $habilite)
 				{
-					
 					if($habilite['id_hero'] == $heros['id_hero'])
 					{
 						?>
 						<h3>
-						
 						<a href="afficher-habilite?habilite=<?=$habilite['id_habilite']?>"><?=$habilite['nom']?></a>
-						
-						
 						</h3>
 						<?php
-					}
-					
-					
+					}	
 				}
 			?>
-
 		</div>
-		
-	
-
 </div>
 
-
-
-<div>
-
-</div>
 
 
 </body>
