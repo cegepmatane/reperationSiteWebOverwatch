@@ -1,56 +1,16 @@
-	
+<?php
+		include_once "baseDeDonnees.php";
+		include "barre-navigation.php";
+	?>	
 <!doctype html>
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<title>Liste des maps</title>
 	
-	<style>
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	body{
-		background-color: lightgrey;
-	}
+	<link rel="stylesheet" href="css/decoration.css">
 	
-	#recherche-avec-autocompletion
-	{
-		position:relative; /* pour qu'il soit parent positionnel de la div de resultat */
-	}
-
 	
-	#recherche-avec-autocompletion input[type=text]
-	{
-		display:inline-block;
-		height:30px; /* meme chiffre que top du resultat */
-		width:400px;
-	}
-	
-	#resultat-autocompletion
-	{
-		border:solid 2px black;
-		position:absolute;
-		display:none;
-		background-color:white;
-		width:400px;
-		top:30px;
-		left:0;
-	}
-
-	</style>
-	
-	<?php
-		include_once "baseDeDonnees.php";
-		include "barre-navigation.php";
-		include ("clicks.php");
-	?>
 	
 	<?php
 	if(!empty($_GET['action-rechercher']))

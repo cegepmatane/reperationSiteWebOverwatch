@@ -2,11 +2,8 @@
 
 	include "baseDeDonnees.php";
 	include "barre-navigation.php";
-	include ("clicks.php");
 	
 	session_start();
-	
-	
 	
 	if(empty ($_SESSION['carte']) && empty ($_SESSION['numeroCarte']))
 	{
@@ -33,7 +30,6 @@
 		}
 	}
 	
-	
 	if($_SESSION['numeroCarte'] == '')
 	{
 		header('Location: formulaire3.php');
@@ -48,22 +44,7 @@
 	<meta charset="utf-8">
 	<title>formulaire</title>
 	
-	<style>
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	body{
-		background-color: lightgrey;
-	}
-	
-	</style>
+	<link rel="stylesheet" href="css/decoration.css">
 	
 </head>
 <body>
@@ -75,8 +56,6 @@
 <h1>Formulaire d'inscription</h1>
 
 <h2>Email</h2>
-
-
 
 	<form action="traitement-formulaire.php" method="post">
 	
@@ -92,20 +71,8 @@
 		?>
 		></div>
 		
-		
 		<input type="submit">
 	</form>
-		
-	
-
-</div>
-
-
-
-<div>
-
-</div>
-
 
 </body>
 </html>

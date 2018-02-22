@@ -3,8 +3,7 @@
 	include "PHPExcel.php";
 	include "baseDeDonnees.php";
 	include "administration\DAO.php";
-	include ("clicks.php");
-	
+
 	$DAO = new DAO();
 	
 	$hero = $DAO->lireHero($basededonnees);

@@ -2,12 +2,8 @@
 
 	include "baseDeDonnees.php";
 	include "barre-navigation.php";
-	include ("clicks.php");
 	
 	session_start();
-	
-	
-	
 ?>	
 
 <!doctype html>
@@ -16,25 +12,7 @@
 	<meta charset="utf-8">
 	<title>formulaire</title>
 	
-	<style>
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	
-	
-	
-	body{
-		background-color: lightgrey;
-	}
-	
-	</style>
+	<link rel="stylesheet" href="css/decoration.css">
 	
 </head>
 <body>

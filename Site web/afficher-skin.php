@@ -3,7 +3,6 @@
 	include "baseDeDonnees.php";
 	include "barre-navigation.php";
 	include "administration\DAO.php";
-	include ("clicks.php");
 	
 	$DAO = new DAO();
 	$skin = $DAO->afficherSupprimerSkin($basededonnees);
@@ -20,22 +19,7 @@
 	<meta charset="utf-8">
 	<title>Skin</title>
 	
-	<style>
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	body{
-		background-color: lightgrey;
-	}
-	
-	</style>
+	<link rel="stylesheet" href="css/decoration.css">
 	
 </head>
 <body>
@@ -46,14 +30,11 @@
 
 <div id="liste-skin">
 
-	
-		
 		<div>Prix : <?=$skin['prix']?></div>
 		<div>Qualité : <?=$skin['qualite']?></div>
 		
 		<?php
-				
-					
+
 				if($skin['evenement'] == 0)
 				{
 					?>
@@ -65,22 +46,8 @@
 					?>
 						<div>Evenement : Oui</div>
 					<?php
-				}					
-					
-			
+				}						
 			?>
-		
-		
-	
-
-</div>
-
-
-
-<div>
-
-</div>
-
 
 </body>
 </html>

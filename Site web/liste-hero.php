@@ -1,4 +1,7 @@
-
+<?php
+	include_once "baseDeDonnees.php";
+	include "barre-navigation.php";
+?>
 
 <!doctype html>
 <html lang="fr">
@@ -8,11 +11,7 @@
 	
 	<link rel="stylesheet" href="css/decoration.css">
 	
-	<?php
-		include_once "baseDeDonnees.php";
-		include "barre-navigation.php";
-		//include ("clicks.php");
-	?>
+	
 	<?php
 	if(!empty($_GET['action-rechercher']))
 	{
@@ -94,14 +93,6 @@
 			<?php
 		}
 	?>
-
-</div>
-
-
-<div>
-
-</div>
-
 
 </body>
 </html>
