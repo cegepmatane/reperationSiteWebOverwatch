@@ -9,8 +9,11 @@
     >
 <channel>
 
+	<link rel="stylesheet" href="css/decoration.css">
+
 <?php
     include "basededonnees.php";
+	include "barre-navigation.php";
 
     $SQL_LISTE_MAP = "SELECT * FROM map";
     $resultatListeMap = $basededonnees->query($SQL_LISTE_MAP);

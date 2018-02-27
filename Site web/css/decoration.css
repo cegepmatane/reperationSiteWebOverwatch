@@ -1,0 +1,127 @@
+*{
+		padding = 0;
+		margin = 0;
+		font-family:Arial, Helvetica, sans-serif;
+		
+	}
+	
+	h1{
+		text-align: center;
+	}
+	
+	#divdate{
+	
+		width:270px;
+		padding:5px;
+		border:3px solid black;
+		
+		font-size: 20px;
+	}
+	#decompte{
+		font-weight:bold;
+	}
+	
+	body {
+	background-image: url("../images/background overwatch.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#recherche-avec-autocompletion
+	{
+		position:relative; /* pour qu'il soit parent positionnel de la div de resultat */
+	}
+
+	
+	#recherche-avec-autocompletion input[type=text]
+	{
+		display:inline-block;
+		height:30px; /* meme chiffre que top du resultat */
+		width:400px;
+	}
+	
+	#resultat-autocompletion
+	{
+		border:solid 2px black;
+		position:absolute;
+		display:none;
+		background-color:white;
+		width:400px;
+		top:30px;
+		left:0;
+	}
+	
+	
+	fieldset, label { margin: 0; padding: 0; }
+            body{ margin: 20px; }
+            h1 { font-size: 1.5em; margin: 10px; }
+ 
+            .rating { 
+            
+                float: left;
+				border:3px dotted black;
+				background-color: grey;
+            }
+ 
+            .rating > input { display: none; } 
+            .rating > label:before { 
+                margin: 5px;
+                font-size: 1.25em;
+                font-family: FontAwesome;
+                display: inline-block;
+                content: "\f005";
+            }
+ 
+            
+ 
+            .rating > label { 
+                color: #ddd; 
+                float: right; 
+            }
+ 
+            .rating > input:checked ~ label, 
+            .rating:not(:checked) > label:hover,  
+            .rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+ 
+            .rating > input:checked + label:hover, 
+            .rating > input:checked ~ label:hover,
+            .rating > label:hover ~ input:checked ~ label, 
+            .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+			
+			
+	#recherche-accueil
+	{
+		padding-bottom: 1%;
+	}
+	
+	#lien
+	{
+		margin-left: 300px;
+	}
+	
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	/* Change the link color to #111 (black) on hover */
+	li a:hover {
+		background-color: #111;
+	}
+			
+			

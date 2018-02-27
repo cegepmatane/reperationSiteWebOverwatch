@@ -5,8 +5,7 @@
 	
 	session_start();
 	
-	
-	
+
 	if(empty ($_SESSION['email']))
 	{
 		$_SESSION['email'] = $_POST['email'];
@@ -44,9 +43,6 @@
 		
 		header('Refresh: 2; URL=accueil.php');
 	}
-	
-	
-	
 ?>	
 
 <!doctype html>
@@ -55,46 +51,17 @@
 	<meta charset="utf-8">
 	<title>formulaire</title>
 	
-	<style>
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	body{
-		background-color: lightgrey;
-	}
-	
-	</style>
-	
+	<link rel="stylesheet" href="css/decoration.css">
 </head>
 <body>
 
 <h1>Traitement formulaire</h1>
-
-
 
 	<?php
 	
 		var_dump($_SESSION);
 	
 	?>
-		
-	
-
-</div>
-
-
-
-<div>
-
-</div>
-
 
 </body>
 </html>

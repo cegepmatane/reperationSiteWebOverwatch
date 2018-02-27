@@ -1,79 +1,17 @@
 <?php
 	session_start();
-	include ("visiteur.php");
-	include ("clicks.php");
+	//include ("visiteur.php");
+	//include ("clicks.php");
 ?>
 <!doctype html>
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>Page d'accueil</title>
+	
+	<link rel="stylesheet" href="css/decoration.css">
 	
 	<style>
 	@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	
-	#divdate{
-	
-		width:270px;
-		padding:5px;
-		border:3px solid black;
-		
-		font-size: 20px;
-	}
-	#decompte{
-		font-weight:bold;
-	}
-	
-	
-	fieldset, label { margin: 0; padding: 0; }
-            body{ margin: 20px; }
-            h1 { font-size: 1.5em; margin: 10px; }
- 
-            .rating { 
-                border: none;
-                float: left;
-            }
- 
-            .rating > input { display: none; } 
-            .rating > label:before { 
-                margin: 5px;
-                font-size: 1.25em;
-                font-family: FontAwesome;
-                display: inline-block;
-                content: "\f005";
-            }
- 
-            
- 
-            .rating > label { 
-                color: #ddd; 
-                float: right; 
-            }
- 
-            .rating > input:checked ~ label, 
-            .rating:not(:checked) > label:hover,  
-            .rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
- 
-            .rating > input:checked + label:hover, 
-            .rating > input:checked ~ label:hover,
-            .rating > label:hover ~ input:checked ~ label, 
-            .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
-
-           
-      
-          
-	
-
 	</style>
 	
 	<script type="text/javascript" src="Ajax.js"></script>
@@ -85,10 +23,8 @@
 
 					
 				var ajax = new Ajax();
-				//alert("Allo")
 				ajax.executer("POST","afficher-site-rating-ajax.php", function(ajax)
 				{
-					//alert(ajax.responseText);
 					cible = document.getElementById("note");
 					cible.innerHTML = cible.innerHTML + ajax.responseText;
 				});
@@ -102,11 +38,6 @@
 </head>
 <body>
 
-<h1>Page d'accueil</h1>
-
-
-
-
 <?php
 		include_once "baseDeDonnees.php";
 		include "barre-navigation.php";
@@ -116,7 +47,7 @@
 	
 		$nombreMembre = $DAO->afficherMembre($basededonnees);
 		
-		echo "Il y a " . $nombreMembre[0] . " inscrits sur ce site !";
+		//echo "Il y a " . $nombreMembre[0] . " inscrits sur ce site !";
 	?>
 	<?php
 	if(!empty($_GET['action-rechercher']))
@@ -148,8 +79,8 @@
 
 <div id="recherche-accueil">
 	<form method="get">
-
-		<input type="text" id="champs-recherche" name="recherche">
+		
+		<p> Faite votre recherche </p><input type="text" id="champs-recherche" name="recherche">
 		<input type="submit" name="action-rechercher" value="Rechercher">
 
 	</form>

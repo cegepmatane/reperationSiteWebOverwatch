@@ -8,15 +8,4 @@
 	$curseurRating = $basededonnees->query($SQL_RATING);
 	$listeRating = $curseurRating->fetch();
 	echo $listeRating['rate'];
-	/*foreach($listeRating as $rating)
-		{
-			?>
-			<h3>
-			
-			<p>Votre note précédente est : <?=$rating['rate']?></p>
-			
-			
-			</h3>
-			<?php
-		}*/
 ?>

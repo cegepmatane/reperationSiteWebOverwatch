@@ -2,12 +2,8 @@
 
 	include "baseDeDonnees.php";
 	include "barre-navigation.php";
-	include ("clicks.php");
 	
 	session_start();
-	
-	
-	
 ?>	
 
 <!doctype html>
@@ -16,25 +12,7 @@
 	<meta charset="utf-8">
 	<title>formulaire</title>
 	
-	<style>
-	*{
-		padding = 0;
-		margin = 0;
-		
-        
-        
-	}
-	h1{
-		text-align: center;
-	}
-	
-	
-	
-	body{
-		background-color: lightgrey;
-	}
-	
-	</style>
+	<link rel="stylesheet" href="css/decoration.css">
 	
 </head>
 <body>
@@ -80,7 +58,7 @@
 				 echo 'checked';
 			
 		
-		?>><img src="imagesHero\homme.png" height="30px"></div>
+		?>><img src="images\homme.png" height="30px"></div>
 		
 		<div>Femme <input type="radio" name="sex" value="femme" 
 		<?php
@@ -90,23 +68,10 @@
 				 echo 'checked';
 			
 		
-		?>><img src="imagesHero\femme.png" height="30px"></div>
+		?>><img src="images\femme.png" height="30px"></div>
 		
 		<input type="submit">
 		
-		
 	</form>
-		
-	
-
-</div>
-
-
-
-<div>
-
-</div>
-
-
 </body>
 </html>
