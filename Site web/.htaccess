@@ -1,6 +1,14 @@
 RewriteEngine On
 
-RewriteRule ^index/?$ accueil
+RewriteRule ^index/?$ accueil.php
+
+rewriteRule ^liste-map/?$ liste-map.php
+rewriteRule ^afficher-map/?$ liste-map.php
+
+rewriteRule ^afficher-map/([0-9]+)/?$ afficher-map.php?map=$1
+
+rewriteRule ^afficher-skin/([0-9]+)/?$ afficher-skin.php?skin=$1
+
 RewriteRule ^heros/?$ liste-hero.php
 RewriteRule ^hero/?$ liste-hero.php
 RewriteRule ^map/?$ liste-map.php

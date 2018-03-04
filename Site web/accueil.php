@@ -16,6 +16,7 @@
 	
 	<script type="text/javascript" src="Ajax.js"></script>
 
+	<!-- Script javascript pour afficher les étoiles. -->
 	<script type="text/javascript">
 		function afficherNote()
 			{
@@ -50,6 +51,8 @@
 		//echo "Il y a " . $nombreMembre[0] . " inscrits sur ce site !";
 	?>
 	<?php
+	
+	// Requête sql pour faire des recherches avec auto-complétion
 	if(!empty($_GET['action-rechercher']))
 	{
 		include_once "baseDeDonnees.php";
@@ -92,6 +95,8 @@
 <div id="divdate">
 <p id="date">
 <?php
+// Décompte avec une date
+
 date_default_timezone_set('America/New_York');
 $date = date("d-m-Y H:i:s");
 echo "Date : $date";
@@ -122,7 +127,7 @@ echo $jours. " jour$s avant le premier avril!";
                 <div>
 				
 
-                    <!-- Demo 1 start -->
+                    <!-- Script pour voter avec les étoiles. -->
 			
                     <h2>Donnez une note à notre site</h2>
 					
